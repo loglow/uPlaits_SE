@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9,13 +9,15 @@
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -45,6 +47,17 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 </layers>
 <board>
 <plain>
@@ -56,18 +69,8 @@
 <wire x1="3" y1="0" x2="0" y2="3" width="0" layer="20" curve="-90"/>
 <wire x1="40" y1="3" x2="37" y2="0" width="0" layer="20" curve="-90"/>
 <wire x1="37" y1="110.5" x2="40" y2="107.5" width="0" layer="20" curve="-90"/>
-<text x="20" y="29" size="1.5" layer="21" ratio="10" align="center">µPlaits SE
-Assembly Template
-TD-UPSE-B-AT
-CC BY-SA 4.0
-2019-01-17
-tall-dog.com</text>
-<text x="20" y="29" size="1.5" layer="22" ratio="10" rot="MR0" align="center">µPlaits SE
-Assembly Template
-TD-UPSE-B-AT
-CC BY-SA 4.0
-2019-01-17
-tall-dog.com</text>
+<text x="2" y="58.5" size="2" layer="22" ratio="12" rot="MR90" align="center">2021-01-01   tall-dog.com</text>
+<text x="20" y="10.75" size="2" layer="22" ratio="12" rot="MR180" align="center">TD-UPSE-C-AT</text>
 <hole x="7.5" y="96" drill="6.2"/>
 <hole x="7.5" y="81" drill="6.2"/>
 <hole x="7.5" y="66" drill="6.2"/>
@@ -95,8 +98,39 @@ tall-dog.com</text>
 <hole x="20" y="83" drill="3.2"/>
 <hole x="20" y="78" drill="3.2"/>
 <hole x="20" y="73" drill="3.2"/>
+<text x="38" y="58.5" size="2" layer="22" ratio="12" rot="MR270" align="center">µPlaits SE Assembly Template</text>
+<text x="20" y="26.5" size="3.5" layer="22" ratio="12" rot="MR0" align="center">2.0 mm</text>
+<text x="20" y="26.5" size="3.5" layer="21" ratio="12" align="center">2.0 mm</text>
+<wire x1="12" y1="29.5" x2="28" y2="29.5" width="0.254" layer="21"/>
+<wire x1="28" y1="29.5" x2="28" y2="23.5" width="0.254" layer="21"/>
+<wire x1="28" y1="23.5" x2="12" y2="23.5" width="0.254" layer="21"/>
+<wire x1="12" y1="23.5" x2="12" y2="29.5" width="0.254" layer="21"/>
+<wire x1="12" y1="29.5" x2="28" y2="29.5" width="0.254" layer="22"/>
+<wire x1="28" y1="29.5" x2="28" y2="23.5" width="0.254" layer="22"/>
+<wire x1="28" y1="23.5" x2="12" y2="23.5" width="0.254" layer="22"/>
+<wire x1="12" y1="23.5" x2="12" y2="29.5" width="0.254" layer="22"/>
+<text x="20" y="10.75" size="2" layer="21" ratio="12" rot="R180" align="center">TD-UPSE-C-AT</text>
+<text x="2" y="58.5" size="2" layer="21" ratio="12" rot="R270" align="center">µPlaits SE Assembly Template</text>
+<text x="38" y="58.5" size="2" layer="21" ratio="12" rot="R90" align="center">2021-01-01   tall-dog.com</text>
 </plain>
 <libraries>
+<library name="uPlaits_SE_Library">
+<packages>
+<package name="HOLE-M2.5">
+<circle x="0" y="0" radius="2.75" width="0" layer="41"/>
+<circle x="0" y="0" radius="2.75" width="0" layer="42"/>
+<pad name="P$1" x="0" y="0" drill="2.75" diameter="5"/>
+<pad name="P$2" x="0" y="1.95" drill="0.3" stop="no"/>
+<pad name="P$3" x="0" y="-1.95" drill="0.3" stop="no"/>
+<pad name="P$4" x="-1.95" y="0" drill="0.3" stop="no"/>
+<pad name="P$5" x="1.95" y="0" drill="0.3" stop="no"/>
+<pad name="P$6" x="1.4" y="1.4" drill="0.3" stop="no"/>
+<pad name="P$7" x="-1.4" y="1.4" drill="0.3" stop="no"/>
+<pad name="P$8" x="-1.4" y="-1.4" drill="0.3" stop="no"/>
+<pad name="P$9" x="1.4" y="-1.4" drill="0.3" stop="no"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -139,7 +173,7 @@ design rules under a new name.</description>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="0.35mm"/>
+<param name="msDrill" value="0.3mm"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -290,13 +324,23 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
+<element name="E$1" library="uPlaits_SE_Library" package="HOLE-M2.5" value="" x="20" y="67.5" smashed="yes"/>
+<element name="E$2" library="uPlaits_SE_Library" package="HOLE-M2.5" value="" x="20" y="4.5" smashed="yes"/>
 </elements>
 <signals>
-<signal name="S$1">
-<via x="20" y="67.5" extent="1-16" drill="2.75" diameter="5"/>
-</signal>
-<signal name="S$2">
-<via x="20" y="4.5" extent="1-16" drill="2.75" diameter="5"/>
+<signal name="GND">
+<polygon width="0.5" layer="1" isolate="0.5">
+<vertex x="0" y="110.5"/>
+<vertex x="40" y="110.5"/>
+<vertex x="40" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
+<polygon width="0.5" layer="16" isolate="0.5">
+<vertex x="0" y="110.5"/>
+<vertex x="40" y="110.5"/>
+<vertex x="40" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -306,12 +350,40 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="19,1,02571fcb3dc1205d"/>
+<approved hash="19,1,a252bfca5dc04058"/>
+<approved hash="19,1,a352a02a42204158"/>
+<approved hash="19,1,0357002b2221215d"/>
+<approved hash="19,1,a2baad4a45404ab0"/>
+<approved hash="19,1,c2b3cd49a543aab9"/>
+<approved hash="19,1,28712b184112427b"/>
+<approved hash="19,1,546953cc39c63e63"/>
+<approved hash="19,1,a28aa6da44d04080"/>
+<approved hash="19,1,028f06db24d12085"/>
+<approved hash="19,1,a13aa92a41204930"/>
+<approved hash="19,1,c133c929a123a939"/>
+<approved hash="19,1,5729572c3d263d23"/>
+<approved hash="19,1,575157183d123d5b"/>
+<approved hash="19,1,026f069b24912065"/>
+<approved hash="19,1,a26aa69a44904060"/>
+<approved hash="19,16,02571fcb3dc1205d"/>
+<approved hash="19,16,a252bfca5dc04058"/>
+<approved hash="19,16,a28aa6da44d04080"/>
+<approved hash="19,16,028f06db24d12085"/>
+<approved hash="19,16,a13aa92a41204930"/>
+<approved hash="19,16,c133c929a123a939"/>
+<approved hash="19,16,5729572c3d263d23"/>
+<approved hash="19,16,575157183d123d5b"/>
+<approved hash="19,16,026f069b24912065"/>
+<approved hash="19,16,a26aa69a44904060"/>
+<approved hash="19,16,a352a02a42204158"/>
+<approved hash="19,16,0357002b2221215d"/>
+<approved hash="19,16,a2baad4a45404ab0"/>
+<approved hash="19,16,c2b3cd49a543aab9"/>
+<approved hash="19,16,28712b184112427b"/>
+<approved hash="19,16,546953cc39c63e63"/>
+</errors>
 </board>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
