@@ -1,5 +1,5 @@
 Name,Part Number,Material,Soldermask,Silkscreen,Finish,Thickness (mm),Length (mm),Width (mm),Trace (mil),Hole (mm)
-uPlaits SE Main Board,TD-UPSE-B-MB,FR-4,Matte black,White,ENIG,1.6,110.5,40.0,10,0.25
-uPlaits SE Control Board,TD-UPSE-B-CB,FR-4,Matte black,White,ENIG,1.6,110.5,40.0,10,0.3
-uPlaits SE Front Panel,TD-UPSE-B-FP,FR-4,Matte black,None,ENIG,2.0,128.5,40.3,N/A,N/A
-uPlaits SE Assembly Template,TD-UPSE-B-AT,FR-4,Blue,White,HASL,1.6,110.5,40.0,N/A,N/A
+uPlaits SE Main Board,TD-UPSE-C-MB,FR-4,Matte black,White,ENIG,1.6,110.5,40.0,10,0.25
+uPlaits SE Control Board,TD-UPSE-C-CB,FR-4,Matte black,White,ENIG,1.6,110.5,40.0,10,0.3
+uPlaits SE Front Panel,TD-UPSE-C-FP,FR-4,Matte black,None,ENIG,2.0,128.5,40.3,N/A,N/A
+uPlaits SE Assembly Template,TD-UPSE-C-AT,FR-4,Blue,White,HASL,2.0,110.5,40.0,N/A,0.3
