@@ -1,4 +1,4 @@
-# µPlaits SE (uPlaits, microPlaits) Eurorack [Rev B]
+# µPlaits SE (uPlaits, microPlaits) Eurorack [Rev C]
 
 ## 8HP Eurorack module | Macro-oscillator
 
